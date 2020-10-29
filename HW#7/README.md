@@ -25,6 +25,6 @@ Actually, it's underfitting, it's not a good model because this classifier can't
 ![Q28](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/HW%237/Q28.jpg)
 
 ## [Q29] Set the model with parameter = 250
-In this situation, there's even no support vector because the model is underfitting. Similarly, it's not a good 
-model because this classifier can't do prediction very well.
+In this situation, there's even no support vector because the model is underfitting. Similarly, it's not
+a good model because this classifier can't do prediction very well.
 ![Q29](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/HW%237/Q29.jpg)
