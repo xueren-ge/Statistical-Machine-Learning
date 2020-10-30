@@ -6,3 +6,5 @@ The principle of this algorithm is the following.
 * start from a guess ![equation](https://latex.codecogs.com/gif.latex?\theta)
 * For ![equation](https://latex.codecogs.com/gif.latex?j&space;>&space;1), iterate over the data points (in any order) 
 and update
+
+$$\operatorname{Ent}(D)=-\sum_{k=1}^{|\mathcal{Y}|}p_k\log_{2}{p_k}$$
