@@ -8,10 +8,10 @@ The principle of this algorithm is the following.
 and update
 
 $$
-\theta^{j+1} = \left\ lbrace
+\theta^{j+1} = \ lbrace
 \begin{array}{lr}
 \theta^{j} + y_{i}x_{i}\\
 \theta^{j}
 \end{array}
-\right.
+\rbrace.
 $$
