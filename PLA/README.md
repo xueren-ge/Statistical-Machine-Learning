@@ -7,4 +7,11 @@ The principle of this algorithm is the following.
 * For ![equation](https://latex.codecogs.com/gif.latex?j&space;>&space;1), iterate over the data points (in any order) 
 and update
 
-$$\operatorname{Ent}(D)=-\sum_{k=1}^{|\mathcal{Y}|}p_k\log_{2}{p_k}$$
+$$
+    \theta^{(j+1)} = \left\{
+        \begin{array}{lr}
+            \theta^{j} + y_{i} \mathbf{x}_{i}, \quad if y_{i} \neq sgn( \theta^{(j)^{T}} \mathbf{x}_{i} ) \\
+            \theta^{j}, \qquad \qquad else \leq 0   
+        \end{array}
+        \right.
+$$
