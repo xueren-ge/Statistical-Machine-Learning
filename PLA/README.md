@@ -10,7 +10,7 @@ and update
 $$
 \theta^{j+1} = \lbrace
 \begin{array}{lr}
-\theta^{j} + y_{i}x_{i}\\
+\theta^{j} + y_{i}x_{i} \\
 \theta^{j}
 \end{array}
 $$
