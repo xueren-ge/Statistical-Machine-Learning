@@ -20,10 +20,10 @@ $$
 First, I generate 2-dimensional Gaussian distribued classes, which each contains 50 points.
 ![picture](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/PLA/data.jpg)
 
-## Initialize $$\theta$$
-In the Picture below, I initialized $$\theta^{0}$$, and the classifier looks awful
+## Initialize $\theta$
+In the Picture below, I initialized $\theta^{0}$, and the classifier looks awful
 ![picture](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/PLA/before.jpg)
 
-## Use formula update $$\theta$$
+## Use formula update $\theta$
 After the final iteration, the classifier looks not so bad, as is indicated in sketch below
 ![picture](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/PLA/after.jpg)
