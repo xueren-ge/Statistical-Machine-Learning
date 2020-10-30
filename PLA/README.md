@@ -10,8 +10,8 @@ and update
 $$
 \theta^{j+1} = \left\lbrace
 \begin{array}{lr}
-\theta^{j} + y_{i}x_{i}, \quad if y_{i} \neq sgn( \theta^{(j)^{T}} x_{i} ) \newline
-\theta^{j, \quad \quad else
+\theta^{j} + y_{i}x_{i}, \quad if y_{i} \neq sgn(\theta^{(j)^{T}} x_{i}) \newline
+\theta^{j}, \quad\quad else
 \end{array}
 \right.
 $$
