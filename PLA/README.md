@@ -21,7 +21,8 @@ First, I generate 2-dimensional Gaussian distribued classes, which each contains
 ![picture](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/PLA/data.jpg)
 
 ## Initialize $\theta$
-In the Picture below, I initialized $\theta^{0}$, and the classifier looks awful
+In the Picture below, I initialized $\theta^{0}$, and the classifier looks awful. Because it's nearly
+vertical to the whole plane. Nevermind, we haven't updated it!
 ![picture](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/PLA/before.jpg)
 
 ## Use formula update $\theta$
