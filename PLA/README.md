@@ -8,10 +8,5 @@ The principle of this algorithm is the following.
 and update
 
 $$
-\mathop{min}_{w,b} \frac{1}{2} \left\| \mathbf{w} \right\|_2^2, \quad s.t. \left\{
-        \begin{array}{lr}
-            \mathbf{w^{T}} \mathbf{x_{i}} +b -y_{i} - \epsilon \leq 0\\
-            -\epsilon - \mathbf{w^{T}} \mathbf{x_{i}} - b +y_{i} \leq 0   
-        \end{array}
- \right.
+\theta^{j+1}
 $$
