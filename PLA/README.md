@@ -13,5 +13,4 @@ $$
 \theta^{j} + y_{i}x_{i}\\
 \theta^{j}
 \end{array}
-\rbrace.
 $$
