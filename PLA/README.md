@@ -22,7 +22,7 @@ First, I generate 2-dimensional Gaussian distribued classes, which each contains
 
 ## Initialize $\theta$
 In the Picture below, I initialized $\theta^{0}$, and the classifier looks awful. Because it's nearly
-vertical to the whole plane. Nevermind, we haven't updated it!
+vertical to the whole plane.
 ![picture](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/PLA/before.jpg)
 
 ## Use formula update $\theta$
