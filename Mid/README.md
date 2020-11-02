@@ -1,4 +1,3 @@
-\usepackage{amssymb}
 # Midterm Problem 3: Playing with classifiers
 The Midterm is in **'ECE6254-Midtermv1.0.pdf'**. However, I just uploaded the Problem 3, the programming part.
 If you are interested in the rest part (mainly mathmatical problems), please feel free to contact me.
@@ -15,8 +14,8 @@ import packages from sklearn. The corresponding results are shown below.
 
 Here, I generated 100 feature vectors in total according to the distribution
 $\mathcal{P}(y=0) = \frac{1}{3}$, $\mathcal{P}(y=1)= \frac{2}{3}$, this means I the number of labeled 0 data is
-33 and the number of labeled 1 is 67. Besides, I have $p(x|y=0) \sim \mathcal{N}\left( \mu_{0} \triangleq [0,1]^{T},
-\Sigma_{0} \triangleq \right)$
+33 and the number of labeled 1 is 67. Besides, I have $p(x|y=0) \sim \mathcal{N}\left( \mu_{0} =[0,1]^{T},
+\Sigma_{0}= \right)$
 ![Generated dataset](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q1.jpg)
 
 ## [Q5] Bayes Classifier 
