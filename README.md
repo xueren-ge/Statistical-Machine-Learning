@@ -22,5 +22,5 @@ The mainly contains some **realization of mathmatical theories** about machine l
 
 
 Note that in order to see README.md clearly(Generally speaking, mathmatical formula), I strongly suggest you to use **Chrome** and install the 
-Chrome extension 'MathJax', the link for installation is here 
+Chrome extension **'MathJax'**, the link for installation is here 
 https://chrome.google.com/webstore/detail/mathjax-plugin-for-github/ioemnmodlmafdkllaclgeombjnmnbima
