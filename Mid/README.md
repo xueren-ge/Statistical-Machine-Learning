@@ -87,5 +87,16 @@ Beyond this, I also calculated the MLE of Gaussian Naive Bayes Classifier. There
 $$
 \pi_{k} = \frac{N_{k}}{N}
 $$
-where $N_{k} = |\left\lbrace i \in [1,N]: y_{i}=k \right\rbrace| = \sum\limits\_{i=1}^{N} \mathcal{l} \left\lbrace y_{i}=k \right\rbrace$ 
+where, $N_{k} = |\left\lbrace i \in [1,N]: y_{i}=k \right\rbrace| = \sum\limits\_{i=1}^{N} \mathcal{l} \left\lbrace y_{i}=k \right\rbrace$, $\mathcal{l}$ here is
+the loss function (Here I used Indicator function as loss function).
+$$
+\hat{P_{x_{j}|y}(\ell|k) = \frac{N_{\ell,k}^{(j)}}{N_{k}}}
+$$
+where, $N_{\ell,k}^{(j)} = | \left\lbrace x:y=k and x_{j}=\ell \right\rbrace  |$
+
+Then we just plug into the Bayes classifier, we have Naive Bayes Estimator,
+$$
+h^{NB}(x) = \mathop{argmax}\limits_{k} \hat{\pi_{k}} \prod\limits_{j=1}^{d} \hat{P_{x_{j}|y}}(x_{j}|k)
+$$
+
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q7.jpg /></div>
