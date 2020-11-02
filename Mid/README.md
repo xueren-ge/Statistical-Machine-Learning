@@ -43,13 +43,26 @@ In Naive Bayes, if the distribution conforms to Gaussian ditribution, then **the
 However, in LDA, **the mean is class dependent but covariance matrix is class independent**
 
 And the testing risk of LDA classifier is 0.1843.
-![LDA Classifier](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q4.jpg)
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q4.jpg /></div>
 
 ## [Q8] QDA classifier
-![QDA Classifier](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q5.jpg)
+A QDA classifier is similar to an LDA classifier, but the **covariance matrices of the generative distributions are now allowed to depend on the class label**.
+And the testing risk of QDA classifier is 0.1078.
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q5.jpg /></div>
+
 
 ## [Q9] Logistic Regression Classifier
-![LDA Classifier](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q6.jpg)
+For logstic regression, things seem to be a little complicated. Since in this problem, data conforms to Gaussian distribution.
+In tools of Maximum Likelihood Estimator(MLE), we can deduce 2 parameter $\hat{w}$ and $\hat{b}$.
+$$
+\hat{w} = \hat{\Sigma}^{-1} (\hat{\mu_{1}} - \hat{\mu_{0}})
+$$
+$$
+\hat{b} = \frac{1}{2} \hat{\mu_{0}}^{T} \hat{\Sigma}^{-1} \hat{\mu_{0}} - \frac{1}{2} \hat{\mu_{1}}^{T} \hat{\Sigma}^{-1} \hat{\mu_{1}} + \frac{1}{2} \ln
+\frac{\hat{pi_{1}}}{\hat{\pi_{0}}}
+$$
+
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q6.jpg /></div>
 
 ## [Q10] Gaussian Naive Bayes Classifier
-![GBN Classifier](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q7.jpg)
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q7.jpg /></div>
