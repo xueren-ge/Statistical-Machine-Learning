@@ -19,7 +19,7 @@ The answer is no doubt regularization. Except for optimizing the loss function, 
 the optimization problem. It has the following form:
 $$
 \hat{\beta}, \hat{\beta_{0}} = \mathop{argmin}\limits{\beta,\beta_{0}} = \sum\limits{i=1}{N} \mathcal{L}(y_{i}-\beta^{T}x_{i}+\beta{0})
-+\frac{\labmda}{2} \left\| \beta \right\|_2
++\frac{\lambda}{2} \left\| \beta \right\|_2
 $$
 
 To illustrate 2 point above, I generate 5 point according to target function $f(x) = x^{2} + n$, where, 
