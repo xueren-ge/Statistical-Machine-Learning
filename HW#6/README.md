@@ -15,7 +15,7 @@ Such problem can be solved by numerical methods.
 
 In Gradient descent.ipynb, we mainly uses three numerical methods to compute MLE of Logistic Regression(LR).
 
-* Gradient Descent
+## Gradient Descent
   The gradient update is:
   $$
   \theta^{(j+1)} = \theta^{(j)} - \eta \sum\limits_{i=1}^{N} \nabla \ell_{i}(\theta)
@@ -23,7 +23,7 @@ In Gradient descent.ipynb, we mainly uses three numerical methods to compute MLE
   Manually setting step size, in every iteration, we use the whole training dataset to update the parameter of LR.
 It's advantage is it's more precise to compute the gradient but it's slow.
   
-* Newton's Method
+## Newton's Method
   $$
   \theta^{(j+1)} = \theta^{(j)} - [\nabla^{2} \ell(\theta)]^{-1} \nabla \ell(\theta)
   $$
@@ -33,7 +33,7 @@ It's advantage is it's more precise to compute the gradient but it's slow.
 which is so called 'Hessian Matrix'. Compared with other 2 methods, it's huge slow in in terms of speed 
 but it's the most precise.
 
-* Stochastic Gradient Descent
+## Stochastic Gradient Descent
   The gradient update is:
   $$
   \theta^{(j+1)} = \theta^{(j)} - \eta \nabla \ell_{i}(\theta)
