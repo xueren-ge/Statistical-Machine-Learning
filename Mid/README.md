@@ -42,6 +42,20 @@ we have **$P_{x|y} = \prod_{i=1}^{d} P_{x_{i}|y}$**.
 In Naive Bayes, if the distribution conforms to Gaussian ditribution, then **the mean and covariance matrix must both be class independent**
 However, in LDA, **the mean is class dependent but covariance matrix is class independent**
 
+Here, I calculated the Maximum Likelihood Estimator(MLE) of LDA parameter, and have that,
+$$
+\hat{\pi_{k}} = \frac{N_{k}}{N}
+$$
+$$
+\hat{\mu_{k}} = \frac{1}{N_{k}} \sum\limits_{i:y_{i}=k} x_{i}
+$$
+$$
+\hat{\Sigma} = \frac{1}{N} \sum\limits_{k=1}^{K-1} \sum\limits_{i:y_{i}=k} (x_{i}-\hat{\mu_{k}})(x_{i}-\hat{\mu_{k}})^{T}
+$$
+Then, we just use these paramater to plug into the Bayes Classifier. And we have,
+$$
+h^{LDA}(x) = \mathop{argmin}\limits_{k} (\frac{1}{2}(x-\hat{\mu_{k}})(x-\hat{\mu_{k}})^{T}-\ln \hat{\pi_{k}})
+$$
 And the testing risk of LDA classifier is 0.1843.
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q4.jpg /></div>
 
