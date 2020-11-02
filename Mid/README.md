@@ -16,7 +16,7 @@ Here, I generated 100 feature vectors in total according to the distribution
 $\mathcal{P}(y=0) = \frac{1}{3}$, $\mathcal{P}(y=1)= \frac{2}{3}$, this means I the number of labeled 0 data is
 33 and the number of labeled 1 is 67.
 
-Besides, I have $p(x|y=0) \sim \mathcal{N}\left( \mu_{0} =[0,1]^{T}, \Sigma_{0}=\begin{bmatrix} 4 & 0\newline 0 & 2 \end{bmatrix} \right)$
+Besides, $p(x|y=0) \sim \mathcal{N}\left( \mu_{0} =[0,1]^{T}, \Sigma_{0}=\begin{bmatrix} 4 & 0\newline 0 & 2 \end{bmatrix} \right)$,
 $p(x|y=1) \sim \mathcal{N}\left( \mu_{0} =[0,-2]^{T}, \Sigma_{0}=\begin{bmatrix} 1 & 0\newline 0 & 1 \end{bmatrix} \right)$, the generated 
 data is shown in the sketch below.
 ![Generated dataset](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q1.jpg)
