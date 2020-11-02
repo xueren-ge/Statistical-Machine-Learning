@@ -15,4 +15,5 @@ smaller, but the variance curve (true risk) is getting larger and larger.
 * When hypothesis set contains simpler functions than targer function $f$ but few samples
 
 To illustrate 2 point above, I generate 5 point according to target function $f(x) = x^{2} + n$, where, 
-$n \sim \mathcal{N} (0, \sigma = 0.1)$
+$n \sim \mathcal{N} (0, \sigma = 0.1)$, and $x \in [-1,1]$. Note that $n$ is the noise here.
+![skecth](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Regression%20and%20Regularization/Q1.jpg)
