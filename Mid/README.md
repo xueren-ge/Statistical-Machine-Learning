@@ -92,7 +92,7 @@ the loss function (Here I used Indicator function as loss function).
 $$
 \hat{P_{x_{j}|y}(\ell|k) = \frac{N_{\ell,k}^{(j)}}{N_{k}}}
 $$
-where, $N_{\ell,k}^{(j)} = | \left\lbrace x:y=k \textrm{and} x_{j}=\ell \right\rbrace  |$
+where, $N_{\ell,k}^{(j)} = | \left\lbrace x:y=k \quad \textrm{and} \quad x_{j}=\ell \right\rbrace  |$
 
 Then we just plug into the Bayes classifier, we have Naive Bayes Estimator,
 $$
