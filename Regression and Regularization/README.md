@@ -13,5 +13,6 @@ smaller, but the variance curve (true risk) is getting larger and larger.
 ## Why Overfitting.
 * when there are too many degrees of freedom in model (the model learns the noise, not target function $f$).
 * When hypothesis set contains simpler functions than targer function $f$ but few samples
+
 To illustrate 2 point above, I generate 5 point according to target function $f(x) = x^{2} + n$, where, 
-$n ~ \mathcal{N} (0, \sigma = 0.1)$
+$n \sim \mathcal{N} (0, \sigma = 0.1)$
