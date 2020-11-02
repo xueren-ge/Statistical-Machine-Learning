@@ -18,7 +18,7 @@ smaller, but the variance curve (true risk) is getting larger and larger.
 The answer is no doubt regularization. Except for optimizing the loss function, regularization also adds a penalty to
 the optimization problem. It has the following form:
 $$
-\hat{\beta}, \hat{\beta_{0}} = \mathop{argmin}\limits{\beta,\beta_{0}} = \sum\limits{i=1}{N} \mathcal{L}(y_{i}-\beta^{T}x_{i}+\beta{0})
+\hat{\beta}, \hat{\beta_{0}} = \mathop{argmin}\limits{\beta,\beta_{0}} = \sum\limits_{i=1}^{N} \mathcal{L}(y_{i}-\beta^{T}x_{i}+\beta{0})
 +\frac{\lambda}{2} ||\beta||^{2}_{2}
 $$
 
