@@ -5,7 +5,14 @@ There are two code files in this folder. HW#6 sketch.ipynb is not related to Pro
 Given data $\left\lbrace (\tilde{x_{i}}, y_{i})\right\rbrace_{i=1}^{N}$, the likelihood function $L(\theta) = \prod_{i=1}^{N} P_{\theta}(y_{i}|\tilde{x_{i}}) $
 where, $\tilde{x} \in \mathcal{R}^{d+1}$, one more dimension is add 1 to $d$-dimension feature vector.
 
-And the loglikelihood is $\ell(\theta) = \sum\limits_{i=1}^{N}[y_{i} \theta^{T} \tilde{x_{i}} - \ln (1+e^{\theta^{T} \tilde{x_{i}} }) ]$
+And the loglikelihood is $\ell(\theta) = \sum\limits_{i=1}^{N}[y_{i} \theta^{T} \tilde{x_{i}} - \ln (1+e^{\theta^{T} \tilde{x_{i}} }) ]$, If we take the deravitive 
+with respect to $\theta$, namely $\nabla_{\theta} \ell(\theta) = 0$, we can have,
+$$
+\sum\limits_{i=1}^{N} \tilde{x_{i}} (y_{i}-\frac{1}{1+exp(-\theta^{T}\tilde{x_{i}})}) = 0
+$$
+Clearly, $\tilde{x_{i}} \in \mathcal{R}^{d+1}$ but $y_{i}-\frac{1}{1+exp(-\theta^{T}\tilde{x_{i}})} \in \mathcal{R}$. We can $d+1$ variables but $d$ functions.
+Such problem can be solved by numerical methods.
+
 In Gradient descent.ipynb, we mainly uses three numerical methods to compute MLE of Logistic Regression(LR).
 
 * Gradient Descent
