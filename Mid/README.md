@@ -17,7 +17,7 @@ $\mathcal{P}(y=0) = \frac{1}{3}$, $\mathcal{P}(y=1)= \frac{2}{3}$, this means I 
 33 and the number of labeled 1 is 67. Besides, I have $p(x|y=0) \sim \mathcal{N}\left( \mu_{0} =[0,1]^{T},
 \Sigma_{0}=
 \begin{pmatrix}
-  4 & 0\\\
+  4 & 0\newline
   0 & 2
 \end{pmatrix}
 \right)$
