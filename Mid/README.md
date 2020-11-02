@@ -90,7 +90,7 @@ $$
 where, $N_{k} = |\left\lbrace i \in [1,N]: y_{i}=k \right\rbrace| = \sum\limits\_{i=1}^{N} \mathcal{l} \left\lbrace y_{i}=k \right\rbrace$, $\mathcal{l}$ here is
 the loss function (Here I used Indicator function as loss function).
 $$
-\hat{P_{x_{j}|y}(\ell|k) = \frac{N_{\ell,k}^{(j)}}{N_{k}}}
+\hat{P_{x_{j}|y}(\ell|k)} = \frac{N_{\ell,k}^{(j)}}{N_{k}}
 $$
 where, $N_{\ell,k}^{(j)} = | \left\lbrace x:y=k \quad \textrm{and} \quad x_{j}=\ell \right\rbrace  |$
 
@@ -99,4 +99,5 @@ $$
 h^{NB}(x) = \mathop{argmax}\limits_{k} \hat{\pi_{k}} \prod\limits_{j=1}^{d} \hat{P_{x_{j}|y}}(x_{j}|k)
 $$
 
+And the testing risk of Naive Bayes classifier is 0.1052.
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q7.jpg /></div>
