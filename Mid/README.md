@@ -35,7 +35,7 @@ And the testing risk of KNN classifier is 0.1479.
 ## [Q7] LDA Classifier
 The assumption of LDA is **Given y, the feature vector have a Gaussian distribution $P_{x|y} \sim \mathcal{N}(\mu_{k},\Sigma)$**, Note that
 $\Sigma$ is independent of $k$. This is extremely important because this is the only difference between LDA and Naive Bayes. In Naive Bayes,
-we have the assumption that **Give $y$, the feature vector \lbrace x_{i} \rbrace_{i=1}^{d} are independent**, we have **$P_{x|y} = \prod_{i=1}^{d}
+we have the assumption that **Give $y$, the feature vector \left\lbrace x_{i} \right\rbrace_{i=1}^{d} are independent**, we have **$P_{x|y} = \prod_{i=1}^{d}
 P_{x_{i}|y}$**
 And the testing risk of LDA classifier is 0.1843.
 ![LDA Classifier](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q4.jpg)
