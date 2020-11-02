@@ -23,13 +23,21 @@ data is shown in the sketch below.
 
 ## [Q5] Bayes Classifier 
 We all know that Bayes classifier is $h^{B}(x) = \mathop{argmax}\limits_{k} \eta_{k}(x)$. What I did is to calculate 
-$\eta_{0}(x)$ and $\eta_{1}(x)$, then compare them. The larger is the predicted label.
+$\eta_{0}(x)$ and $\eta_{1}(x)$, then compare them. The larger is the predicted label. And the testing risk of Bayes classifier is 0.0973.
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q2.jpg /></div>
 
 ## [Q6] K-NN Classifier
-![KNN Classifier](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q3.jpg)
+For KNN classifier, the only thing we should care is to set parameter k to avoid it underfitting or overfitting, in this example,
+when I set k as 15, I found there are still islands, so in order not to overfitting, I set it as 10. So the decision boundary is smoother.
+And the testing risk of KNN classifier is 0.1479. 
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q3.jpg /></div>
 
 ## [Q7] LDA Classifier
+The assumption of LDA is **Given y, the feature vector have a Gaussian distribution $P_{x|y} \sim \mathcal{N}(\mu_{k},\Sigma)$**, Note that
+$\Sigma$ is independent of $k$. This is extremely important because this is the only difference between LDA and Naive Bayes. In Naive Bayes,
+we have the assumption that **Give $y$, the feature vector \lbrace x_{i} \rbrace_{i=1}^{d} are independent**, we have **$P_{x|y} = \prod_{i=1}^{d}
+P_{x_{i}|y}$**
+And the testing risk of LDA classifier is 0.1843.
 ![LDA Classifier](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q4.jpg)
 
 ## [Q8] QDA classifier
