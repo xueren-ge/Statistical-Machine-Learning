@@ -21,10 +21,10 @@ $$
 \hat{\beta}, \hat{\beta_{0}} = \mathop{argmin}\limits{\beta,\beta_{0}} = \sum\limits_{i=1}^{N} \mathcal{L}(y_{i}-\beta^{T}x_{i}+\beta_{0})
 +\frac{\lambda}{2} ||\beta||^{2}_{2}
 $$
-Note that $\mathcal{L}$ is general loss function, it can be SSE, mean absolute error, Huber loss, $\eplison$-insensitive loss. 
+Note that $\mathcal{L}$ is general loss function, it can be SSE, mean absolute error, Huber loss, $\epsilon$-insensitive loss. 
 
 To illustrate 2 point above, I generate 5 point according to target function $f(x) = x^{2} + n$, where, 
-$n \sim \mathcal{N} (0, \sigma = 0.1)$, and $x \in [-1,1]$. Note that $n$ is the noise here. As is shown in the sketch,
+$n \sim \mathcal{N} (0, \sigma = 0.1)$, and $x \in [-1,1]$. Note that $n$ is the noise here. As is shown in the sketch below,
 ![skecth](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Regression%20and%20Regularization/Q1.jpg)
 
 Then I set degree to 6, since we only have five points, there exists a degree six polynomial that predicts exactly the
