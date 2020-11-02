@@ -14,6 +14,19 @@ smaller, but the variance curve (true risk) is getting larger and larger.
 * when there are too many degrees of freedom in model (the model learns the noise, not target function $f$).
 * When hypothesis set contains simpler functions than targer function $f$ but few samples
 
+## How to prevent Overfitting
+The answer is no doubt regularization. Except for optimizing the loss function, regularization also adds a penalty to
+the optimization problem. It has the following form:
+$$
+\hat{\beta}, \hat{\beta_{0}} = \mathop{argmin}\limits{\beta,\beta_{0}} = \sum\limits{i=1}{N} \mathcal{L}(y_{i}-\beta^{T}x_{i}+\beta{0})
++\frac{\labmda}{2} \left\| \beta \right\|_2
+$$
+
 To illustrate 2 point above, I generate 5 point according to target function $f(x) = x^{2} + n$, where, 
-$n \sim \mathcal{N} (0, \sigma = 0.1)$, and $x \in [-1,1]$. Note that $n$ is the noise here.
+$n \sim \mathcal{N} (0, \sigma = 0.1)$, and $x \in [-1,1]$. Note that $n$ is the noise here. As is shown in the sketch,
 ![skecth](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Regression%20and%20Regularization/Q1.jpg)
+
+Then I set degree to 6, since we only have five points, there exists a degree six polynomial that predicts exactly the
+value of all five training point. This is an example where our regression is effectively learning the noise in the model.
+![skecth](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Regression%20and%20Regularization/Q2.jpg)
+
