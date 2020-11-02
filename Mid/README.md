@@ -61,7 +61,7 @@ $$
 \hat{b} = \frac{1}{2} \hat{\mu_{0}}^{T} \hat{\Sigma}^{-1} \hat{\mu_{0}} - \frac{1}{2} \hat{\mu_{1}}^{T} \hat{\Sigma}^{-1} \hat{\mu_{1}} + \frac{1}{2} \ln
 \frac{\hat{pi_{1}}}{\hat{\pi_{0}}}
 $$
-
+Note that $\hat{\mu_{0}}, \hat{\mu_{1}}, \hat{\pi_{0}}, \hat{\pi_{1}}, \hat{\Sigma}$ is caculated according to MLE of LDA.
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q6.jpg /></div>
 
 ## [Q10] Gaussian Naive Bayes Classifier
