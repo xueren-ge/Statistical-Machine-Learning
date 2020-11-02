@@ -22,6 +22,8 @@ data is shown in the sketch below.
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q1.jpg /></div>
 
 ## [Q5] Bayes Classifier 
+We all know that Bayes classifier is $h^{B}(x) = \mathop{argmax}\limits_{k} \eta_{k}(x)$. What I did is to calculate 
+$\eta_{0}(x)$ and $\eta_{1}(x)$, then compare them. The larger is the predicted label.
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Mid/Q2.jpg /></div>
 
 ## [Q6] K-NN Classifier
