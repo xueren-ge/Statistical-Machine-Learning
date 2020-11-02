@@ -41,10 +41,10 @@ we doesn't use regularization, there's a huge variance in predictor, suggesting 
 generalize well.
 ![skecth](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Regression%20and%20Regularization/Q3.jpg)
 
-Still run the third experiment but here I used ridge regression. Note that ridge regression just penalizes $\beta$ in the function
-above, it doesn't penalize the offset $\beta_{0}$. Compared with experiment 3, you can find that the variance is getting smaller,
-actually, all the straight lines seem to forward towards certain degrees. More generally, the scope is constrained. That's how regularization
-helps. And there are many ways to regularize, such as **Tikhonov regularization**, **LASSO regularization**, **Ridge Regression**and etc. Of course,
-we can use kernel methods to implement regression in nonlinear domain.
+Still run the 3rd experiment but here I used ridge regression. Note that ridge regression just penalizes $\beta$ in the function,
+it doesn't penalize the offset $\beta_{0}$. Compared with 3rd experiment, you can find the variance is getting smaller, actually, 
+all the straight lines seem to forward towards certain degrees. More generally, the scope is constrained. That's how regularization
+helps. And there are many ways to regularize, such as **Tikhonov regularization**, **LASSO regularization** and etc. Note that 
+kernelization can be achieved.
 ![skecth](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Regression%20and%20Regularization/Q4.jpg)
 
