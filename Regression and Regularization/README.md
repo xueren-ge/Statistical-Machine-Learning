@@ -36,9 +36,13 @@ Then I set degree to 6, since we only have five points, there exists a degree si
 value of all five training point. This is an example where our regression is effectively learning the noise in the model.
 ![skecth](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Regression%20and%20Regularization/Q2.jpg)
 
-Afterwards, I set polynomial of degree to 1 and get regression results for twenty randomly sampled sets of five points. 
-Clearly, if we doesn't use regularization, there's a huge variance in predictor. suggesting that we have an unstable prediction
-that does not generalize well.
+I set polynomial of degree to 1 and get regression results for twenty randomly sampled sets of five points. Clearly, if 
+we doesn't use regularization, there's a huge variance in predictor, suggesting that we have an unstable prediction that does not 
+generalize well.
 ![skecth](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Regression%20and%20Regularization/Q3.jpg)
 
+Still run the third experiment but here I used ridge regression. Note that ridge regression just penalizes $\beta$ in the function
+above, it doesn't penalize the offset $\beta_{0}$. Compared with experiment 3, you can find that the variance is getting smaller,
+actually, all the straight lines seem to forward towards certain degrees. More generally, the scope is constrained.
+![skecth](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Regression%20and%20Regularization/Q4.jpg)
 
