@@ -24,7 +24,10 @@ In Gradient descent.ipynb, we mainly uses three numerical methods to compute MLE
 It's advantage is it's more precise to compute the gradient but it's slow.
   
 * Newton's Method
+  $$
   \theta^{(j+1)} = \theta^{(j)} - [\nbala^{2} \ell(\theta)]^{-1} \nabla \ell(\theta)
+  $$
+  where $\nbala^{2} \ell(\theta)$ is Hessian Matrix.
   Mathmatically speaking, it's the most precise way to compute the gradient because it deduced the stepsize
 which is so called 'Hessian Matrix'. Compared with other 2 methods, it's huge slow in in terms of speed 
 but it's the most precise.
