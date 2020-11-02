@@ -1,3 +1,4 @@
+\usepackage{amssymb}
 # Midterm Problem 3: Playing with classifiers
 The Midterm is in **'ECE6254-Midtermv1.0.pdf'**. However, I just uploaded the Problem 3, the programming part.
 If you are interested in the rest part (mainly mathmatical problems), please feel free to contact me.
