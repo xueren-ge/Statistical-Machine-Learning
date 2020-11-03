@@ -16,16 +16,11 @@ you are using different hypothesis. The main tasks are as follows,
 ## [Q2] Run KNN with K=4 and compute the empirical risk
 
   Here, I selected first 3000 pictures as my training dataset and subsequent 4000 pictures as test dataset. And I calculated the ratio of each class’s total amounts. As is shown in the table, the ratio fluctuates around 50%. Hence, classes contain roughly the same number of images.
-
-table.center {
-  margin-left: auto; 
-  margin-right: auto;
-}
  
 <table class="center">
   <tr>
-    <th width=10%>Label</th>
-    <th width=10%>Ratio</td>
+    <th >Label</th>
+    <th >Ratio</td>
   </tr>
   <tr>
     <td> '8'</th>
