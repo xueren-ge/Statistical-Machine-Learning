@@ -17,6 +17,10 @@ you are using different hypothesis. The main tasks are as follows,
 
   Here, I selected first 3000 pictures as my training dataset and subsequent 4000 pictures as test dataset. And I calculated the ratio of each class’s total amounts. As is shown in the table, the ratio fluctuates around 50%. Hence, classes contain roughly the same number of images.
  
+| Label | Ratio |
+| --- | --- |
+| '8' | 0.487 |
+| '9' | 0.513 |
  
 <table class="center">
   <tr>
