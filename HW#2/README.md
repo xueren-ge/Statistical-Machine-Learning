@@ -71,3 +71,6 @@ Here I used Isomap transformation.
 Figure shows testing dataset that are correctly classified using the Isomap transformed learned earlier.
 After calculation, the ratio of correctly classified data is: 0.98425
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/HW%232/Q5.jpg /></div>
+
+</body>
+</html>
