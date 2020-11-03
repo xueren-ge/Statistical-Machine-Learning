@@ -1,3 +1,20 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table.center {
+  margin-left: auto; 
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+  
 # HW#2 Problem 2: Learning tradeoff on MNIST dataset
 
 Tradeoff is espically important in machine learning. It's balance between underfitting and overfitting.  Overfitting means
