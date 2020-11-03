@@ -27,10 +27,19 @@ you are using different hypothesis. The main tasks are as follows,
   </tr>
 </table>
 
-After computation, Empirical Risk is: 0.008333333333333333, and Test Risk is: 0.01575.There are some examples which are incorrectly classified, which shows in Figure below. As we can see from these incorrectly classified samples, it’s even hard for people to distinguish these figures. And the handwriting is very sloppy, the strokes are either crossed (b) or twisted together (c). Some part of figure even exceeds the range (d). Thus, it’s difficult to extract some distinct feature, which indicates that it’s difficult to classify.
+After computation, Empirical Risk is: 0.008333333333333333, and Test Risk is: 0.01575. There are some examples which are incorrectly classified, which shows in Figure below. As we can see from these incorrectly classified samples, it’s even hard for people to distinguish these figures. And the handwriting is very sloppy, the strokes are either crossed (b) or twisted together (c). Some part of figure even exceeds the range (d). Thus, it’s difficult to extract some distinct feature, which indicates that it’s difficult to classify.
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/HW%232/Q2.jpg /></div>
 
 ## [Q3] Set K from 1 to 10 and find the tradeoff
+
+>We can see the tradeoff between underfitting and overfitting.
+
+>When K is set under 2, the trending of test risk goes up because it’s overfitting but the trending of Empirical Risk continues going down. The KNN classifier just memorizes the training dataset thus Empirical Risk is smaller but when on testing dataset, its performance is not as good as expected. For example, when k=1, the nearest point is itself, which means that it just memorizes the training dataset.
+
+>When K is set below 2, the trending of Test Risk and Empirical Risk both goes down because it’s underfitting. We haven’t trained the best model h∗ from our training dataset.
+
+>So, the tradeoff point is to set K=2, where the Test Risk is the local minimal and Empirical Risk is fairly small.
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/HW%232/Q3.jpg /></div>
 
 ## [Q4] Reduce the dimension
 
