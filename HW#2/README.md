@@ -20,13 +20,13 @@ you are using different hypothesis. The main tasks are as follows,
 <table style="width:100%" text-align: center>
   <tr>
     <th width=10%, bgcolor=yellow >Label</th>
-    <td>'8'</td>
-    <td>'9'</td>
+    <td width=10%>'8'</td>
+    <td width=10%>'9'</td>
   </tr>
-   <tr>
+  <tr>
     <th width=10%, bgcolor=yellow >Ratio</th>
-    <td> 0.487</td>
-    <td> 0.513</td>
+    <td width=10%> 0.487</td>
+    <td width=10%> 0.513</td>
   </tr>
 </table>
 
