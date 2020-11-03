@@ -27,6 +27,9 @@ you are using different hypothesis. The main tasks are as follows,
   </tr>
 </table>
 
+After computation, Empirical Risk is: 0.008333333333333333, and Test Risk is: 0.01575.There are some examples which are incorrectly classified, which shows in Figure below. As we can see from these incorrectly classified samples, it’s even hard for people to distinguish these figures. And the handwriting is very sloppy, the strokes are either crossed (b) or twisted together (c). Some part of figure even exceeds the range (d). Thus, it’s difficult to extract some distinct feature, which indicates that it’s difficult to classify.
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/HW%232/Q2.jpg /></div>
+
 ## [Q3] Set K from 1 to 10 and find the tradeoff
 
 ## [Q4] Reduce the dimension
