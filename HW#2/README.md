@@ -17,23 +17,11 @@ you are using different hypothesis. The main tasks are as follows,
 
   Here, I selected first 3000 pictures as my training dataset and subsequent 4000 pictures as test dataset. And I calculated the ratio of each class’s total amounts. As is shown in the table, the ratio fluctuates around 50%. Hence, classes contain roughly the same number of images.
 
-<html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-table, th, td {
-  border: 1px solid black;
-  border-collapse: collapse;
-}
-
 table.center {
   margin-left: auto; 
   margin-right: auto;
 }
-</style>
-</head>
-<body>
-  
+ 
 <table class="center">
   <tr>
     <th width=10%>Label</th>
@@ -48,8 +36,6 @@ table.center {
     <td> 0.513</td>
   </tr>
 </table>
-</body>
-</html>
 
 After computation, Empirical Risk is: 0.008333333333333333, and Test Risk is: 0.01575. There are some examples which are incorrectly classified, which shows in Figure below. As we can see from these incorrectly classified samples, it’s even hard for people to distinguish these figures. And the handwriting is very sloppy, the strokes are either crossed (b) or twisted together (c). Some part of figure even exceeds the range (d). Thus, it’s difficult to extract some distinct feature, which indicates that it’s difficult to classify.
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/HW%232/Q2.jpg /></div>
