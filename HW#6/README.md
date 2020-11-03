@@ -23,6 +23,9 @@ In Gradient descent.ipynb, we mainly uses three numerical methods to compute MLE
   Manually setting step size, in every iteration, we use the whole training dataset to update the parameter of LR.
 It's advantage is it's more precise to compute the gradient but it's slow.
   
+  The figure shows that after 1924 iterations, Gradient Descent cost converges in 226.365.
+  <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/HW%236/Q1.jpg /></div>
+  
 ## Newton's Method
   $$
   \theta^{(j+1)} = \theta^{(j)} - [\nabla^{2} \ell(\theta)]^{-1} \nabla \ell(\theta)
@@ -33,6 +36,9 @@ It's advantage is it's more precise to compute the gradient but it's slow.
 which is so called 'Hessian Matrix'. Compared with other 2 methods, it's huge slow in in terms of speed 
 but it's the most precise.
 
+  The figure shows that after 8 iterations, Newton's Method cost converges in 226.365.
+  <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/HW%236/Q2.jpg /></div>
+  
 ## Stochastic Gradient Descent
   The gradient update is:
   $$
@@ -42,3 +48,6 @@ but it's the most precise.
 and uses it to compute gradient. You will find the descendent process is quite fluctuating and we have to set 
 extraly a parameter to avoid it jumping out of the iteration loop too early. Technically speaking, it needs more
 iterations to converge but it's fast in terms of speed. Actually it's suitable for real-time learning.
+
+  The figure shows that after 45000 iterations, Stochastic Gradient Descent cost converges in 225.239.
+  <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/HW%236/Q4.jpg /></div>
