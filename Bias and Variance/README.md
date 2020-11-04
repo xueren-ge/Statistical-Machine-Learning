@@ -10,3 +10,11 @@
 $$
 R(\hat{h}^{D}) = E_{XY} \left\[ (\hat{h_{D}}(x) -Y)^{2}\right\]
 $$
+
+Thus, we can have ,
+$$
+E_{D} \left\[ R(\hat{h_{D}) \right\] = \sigma_{\epsilon}^{2} + E_{x} \left\[ Var(\hat{h_{D}(X)})|X \right\]+E_{X} \left\[ Bias(\hat{h_{D}}(X))^{2}|X \right\]
+$$
+with,  $Var(\hat{h_{D}(X)}) = E_{D} \left\[ ( \hat{h_{D}}(X) - E_{D}\left\[ \hat{h_{D}}(X) \right\]   )^{2} \right\]$,
+$Bias(\hat{h_{D}(X)}) = E_{D}\left\[ \hat{h_{D}}(X) \right\] - \mathcal{h}$
+
