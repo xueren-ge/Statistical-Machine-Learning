@@ -8,5 +8,5 @@
 * $\hat{h}_{D}: \mathcal{R}^{d} \to \mathcal{R}$: choice of function in $\mathcal{H}$ selected using $\mathcal{D}$
 * Squared error for fixed $\hat{h_{D}}$ is,
 $$
-R(\hat{h}^{D}) = \mathcal{E}_XY \left\[ (\hat{h_{D}}(x) -Y)^{2}\right\]
+R(\hat{h}^{D}) = E_XY \left\[ (\hat{h_{D}}(x) -Y)^{2}\right\]
 $$
