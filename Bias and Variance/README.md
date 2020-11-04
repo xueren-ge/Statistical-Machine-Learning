@@ -39,7 +39,21 @@ for any two point $(x_{0},y_{0}), (x_{1},y_{1})$ with $x_{1} > x_{0}$
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Bias%20and%20Variance/F2.jpg /></div>
 
 ### Low variance with large bias
+
 Here I run 1000 times for the first model $\mathcal{H_{0}}$, the results are shown below. Clearly, the variance is pretty small, all the horizontal
 lines are restricted within $[-1,1]$. However, the bias is huge because you can see that the red line (Average) lies nearly in 0. It means generally,
-all the model doesn't catch up the trend of target function $sin(\pi x)$
+all the model doesn't catch up the trend of target function $sin(\pi x)$.
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Bias%20and%20Variance/F3.jpg /></div>
+
+### Low bias with large variance
+
+Similarly, I run 1000 times for the first model $\mathcal{H_{1}}$, and the variance is pretty huge, because the slope of line doesn't get constrained.
+However, the bias is relatively small, because the average(red line) follows the trend of target function $sin(\pi x)$.
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Bias%20and%20Variance/F4.jpg /></div>
+
+### Regularization
+
+Here, I used ridge regression to regularize the optimization. The results are obvious. You can see that the variance is smaller because all the
+lines shown in x coordinates $[-1,1]$ are restricted within y coordinates $[-1,1]$. Meanwhile, the slope of the average (red line) is not 0 any more,
+it starts to follow the trend of target function $sin(\pi x)$.
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Bias%20and%20Variance/F5.jpg /></div>
