@@ -15,6 +15,6 @@ Thus, we can have ,
 $$
 E_{D} \left\[ R(\hat{h_{D}}) \right\] = \sigma_{\epsilon}^{2} + E_{x} \left\[ Var(\hat{h_{D}}(X))|X \right\]+E_{X} \left\[ Bias(\hat{h_{D}}(X))^{2}|X \right\]
 $$
-with,  $Var(\hat{h_{D}}(X)) = E_{D} \left\[ ( \hat{h_{D}}(X) - E_{D}\left\[ \hat{h_{D}}(X) \right\]   )^{2} \right\]$ and
-$Bias(\hat{h_{D}}(X)) = E_{D}\left\[ \hat{h_{D}}(X) \right\] - \mathcal{h}$
+with,  $Var(\hat{h_{D}}(X)) = E_{D} \left\[ ( \hat{h_{D}}(X) - E_{D}\left\[ \hat{h_{D}}(X) \right\]   )^{2} \right\]$ and 
+$Bias(\hat{h_{D}}(X)) = E_{D}\left\[ \hat{h_{D}}(X) \right\] - \mathcal{h}$. Note that $\sigma_{\epsilon}^{2}$ is noise here.
 
