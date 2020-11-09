@@ -14,12 +14,15 @@ The mainly contains some **realization of mathmatical theories** about machine l
 * LDA (Linear Discriminant Analysis)
 * Logistic Regression
 * PLA
+* Convex Optimization (KKT conditions, Dual and Primal Problems, Lagrangian)
 * SVM
+* VC Dimension
+* Regression (Regularization)
+* Bias and Variance
+* Cross Validation
 
-## Regression
-* Ridge Regression
-* Regularization
-
+## Unsupervised Learning
+* Dimensionality Reduction
 
 Note that in order to see README.md clearly(Generally speaking, mathmatical formula), I strongly suggest you to use **Chrome** and install the 
 Chrome extension **'MathJax'**, the link for installation is here 
