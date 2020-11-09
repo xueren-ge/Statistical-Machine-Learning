@@ -12,6 +12,7 @@ The mainly contains some **realization of mathmatical theories** about machine l
 * Bayes
 * Naive Bayes (use Bag of Words)
 * LDA (Linear Discriminant Analysis)
+* Numerical Calculation (GD, Newton's Method, SGD)
 * Logistic Regression
 * PLA
 * Convex Optimization (KKT conditions, Dual and Primal Problems, Lagrangian)
