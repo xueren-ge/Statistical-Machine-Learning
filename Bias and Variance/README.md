@@ -69,6 +69,25 @@ $$
 \hat{\theta} = (X^TX+\Gamma^T\Gamma)^{-1}X^Ty
 $$
 
-For the first case, we have the constant function $y = b$, and $a = 0$. Hence, we shouldn't penalize $b$ and set the first element in $\Gamma$ to 0.
+For the first case, we have the constant function $y = b$. Hence, we shouldn't penalize $b$ and set the first element in $\Gamma$ to 0.
 Besides, we have $a \approx 0$ because if $a=0$, the matrix $(X^TX + \Gamma^T\Gamma)$ is singular and have no inverse matrix. Thus $\hat{\theta}$
-doesn't hold any more.
+doesn't hold any more. Thus, we should penalize $a$, and as for $\Gamma$, the fourth element should be large enough so that $a \approx 0$.
+We can imagine that the $\Gamma$ has the format,
+$$
+    \begin{matrix}
+    0 & 0 \\
+    0 & K \\
+    \end{matrix}
+$$
+where, $K$ is extremely large.
+
+For the second case, if we only randomly generate 2 datapoints, and our classifier are required to pass through these 2 points. Under this condition,
+we can imagine this classifier is overfitting because it focuses more on the 2 given data and ignore unseen samples. To be more precise, **the classifier
+is unbiased**. Hence, we shouldn't penalize anything, because unbaised classifier means minimizing the loss and ignore others.
+In this case, we can imagine that the $\Gamma$ has the format,
+$$
+    \begin{matrix}
+    0 & 0 \\
+    0 & 0 \\
+    \end{matrix}
+$$
