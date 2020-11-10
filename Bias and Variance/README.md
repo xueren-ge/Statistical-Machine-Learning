@@ -26,7 +26,7 @@ the model, the bias is getting small but the variance getting larger.
 
 ## Visualization
 
-Here I generated the true model as $\mathcal{h}(x) = sin(\pi x$. And we consider two models here,
+Here I generated the true model as $\mathcal{h}(x) = sin(\pi x)$. And we consider two models here,
 * $\mathcal{H_{0}}: h(x) = b$, horizontal line
 * $\mathcal{H_{1}}: h(x) = ax + b$, any line
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Bias%20and%20Variance/F1.jpg /></div>
@@ -57,3 +57,10 @@ Here, I used ridge regression to regularize the optimization. The results are ob
 lines shown in x coordinates $[-1,1]$ are restricted within y coordinates $[-1,1]$. Meanwhile, the slope of the average (red line) is not 0 any more,
 it starts to follow the trend of target function $sin(\pi x)$.
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Bias%20and%20Variance/F5.jpg /></div>
+
+## More Thoughts
+
+If we use Tykhonov Regularization in 2 situations discussed above. Namely, we introduce a penalty term to regularize $\theta$, we can have,
+$$
+\theta = \mathcal{argmin}\limits_{\theta} || y-X\theta ||^{2}__{2} + || \Gamma \theta ||^{2}__{2} 
+$$
