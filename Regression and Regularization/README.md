@@ -48,3 +48,23 @@ helps. And there are many ways to regularize, such as **Tikhonov regularization*
 kernelization can be achieved.
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Regression%20and%20Regularization/Q4.jpg /></div>
 
+## Some Regularization
+### Tykhonov Regularization
+We introduce a penalty term to 'regularize' the vector $\theta$,
+$$
+\theta = \mathcal{argmin_{\theta}} \lVert y-X\theta\rVert_{2}^{2} + \lVert \Gamma \theta \rVert_{2}^{2}
+$$
+We can solve this optimization problem by Lagrangian, the solutions turn to
+$$
+\hat{\theta} = (X^TX+\Gamma^T\Gamma)^{-1}X^Ty
+$$
+Special case: If $\Gamma = \sqrt{\lambda}I$, and the first column first row element is set to 0, This means we don't penalize the
+offset $\beta_{0}$, we only penalize $\beta$. This is so-called 'Ridge Regression'.
+Note that Tykhonov Regularization is a shrinking estimator.
+
+### LASSO Regularization
+Instead of using norm 2, here we use norm 1
+$$
+\hat{theta} = \mathcal{argmin_{\theta}} \lVert y-X\theta\rVert_{2}^{2} + \lVert \Gamma \theta \rVert_{1}
+$$
+The main benefit to introduce norm 1 is that the solution promotes **sparsity**.
