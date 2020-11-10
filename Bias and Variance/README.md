@@ -64,3 +64,11 @@ If we use Tykhonov Regularization in 2 situations discussed above. Namely, we in
 $$
 \theta = \mathcal{argmin_{\theta}} \lVert y-X\theta\rVert_{2}^{2} + \lVert \Gamma \theta \rVert_{2}^{2}
 $$
+We can solve this optimization problem by Lagrangian, the solutions turn to
+$$
+\hat{\theta} = (X^TX+\Gamma^T\Gamma)^{-1}X^Ty
+$$
+
+For the first case, we have the constant function $y = b$, and $a = 0$. Hence, we shouldn't penalize $b$ and set the first element in $\Gamma$ to 0.
+Besides, we have $a \approx 0$ because if $a=0$, the matrix $(X^TX + \Gamma^T\Gamma)$ is singular and have no inverse matrix. Thus $\hat{\theta}$
+doesn't hold any more.
