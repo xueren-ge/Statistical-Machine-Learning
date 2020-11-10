@@ -62,5 +62,5 @@ it starts to follow the trend of target function $sin(\pi x)$.
 
 If we use Tykhonov Regularization in 2 situations discussed above. Namely, we introduce a penalty term to regularize $\theta$, we can have,
 $$
-\theta = \mathcal{argmin}\limits_{\theta} || y-X\theta ||^{2} + || \Gamma \theta ||^{2} 
+\theta = \mathcal{argmin_{\theta}} || y-X\theta ||^{2} + || \Gamma \theta ||^{2} 
 $$
