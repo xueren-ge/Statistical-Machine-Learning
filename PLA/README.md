@@ -18,13 +18,13 @@ $$
 
 ## Generate Dataset
 First, I generate 2-dimensional Gaussian distribued classes, which each contains 50 points.
-![picture](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/PLA/data.jpg)
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/PLA/data.jpg /></div>
 
 ## Initialize $\theta$
 In the Picture below, I initialized $\theta^{0}$, and the classifier looks awful. Because it's nearly
 vertical to the whole plane.
-![picture](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/PLA/before.jpg)
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/PLA/before.jpg /></div>
 
 ## Use formula update $\theta$
 After the final iteration, the classifier looks not so bad, as is indicated in sketch below
-![picture](https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/PLA/after.jpg)
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/PLA/after.jpg /></div>
