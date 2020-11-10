@@ -75,8 +75,8 @@ doesn't hold any more. Thus, we should penalize $a$, and as for $\Gamma$, the fo
 We can imagine that the $\Gamma$ has the format,
 $$
     \begin{matrix}
-    0 & 0 \\
-    0 & K \\
+    0 & 0 \newline
+    0 & K \newline
     \end{matrix}
 $$
 where, $K$ is extremely large.
@@ -87,7 +87,7 @@ is unbiased**. Hence, we shouldn't penalize anything, because unbaised classifie
 In this case, we can imagine that the $\Gamma$ has the format,
 $$
     \begin{matrix}
-    0 & 0 \\
-    0 & 0 \\
+    0 & 0 \newline
+    0 & 0 \newline
     \end{matrix}
 $$
