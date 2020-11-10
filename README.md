@@ -22,8 +22,13 @@ The mainly contains some **realization of mathmatical theories** about machine l
 * Bias and Variance
 * Cross Validation
 
+## Dimensionality Reduction
+* Filter Methods
+* Fisher LDA
+* Principal Component Analysis (PCA)
+
 ## Unsupervised Learning
-* Dimensionality Reduction
+
 
 Note that in order to see README.md clearly(Generally speaking, mathmatical formula), I strongly suggest you to use **Chrome** and install the 
 Chrome extension **'MathJax'**, the link for installation is here 
