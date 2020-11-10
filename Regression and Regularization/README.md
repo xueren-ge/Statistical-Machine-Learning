@@ -59,12 +59,12 @@ $$
 \hat{\theta} = (X^TX+\Gamma^T\Gamma)^{-1}X^Ty
 $$
 Special case: If $\Gamma = \sqrt{\lambda}I$, and the first column first row element is set to 0, This means we don't penalize the
-offset $\beta_{0}$, we only penalize $\beta$. This is so-called 'Ridge Regression'.
+offset $\beta_{0}$, we only penalize $\beta$. This is so-called **'Ridge Regression'**.
 Note that Tykhonov Regularization is a shrinking estimator.
 
 ### LASSO Regularization
 Instead of using norm 2, here we use norm 1
 $$
-\hat{theta} = \mathcal{argmin_{\theta}} \lVert y-X\theta\rVert_{2}^{2} + \lVert \Gamma \theta \rVert_{1}
+\hat{\theta} = \mathcal{argmin_{\theta}} \lVert y-X\theta\rVert_{2}^{2} + \lVert \Gamma \theta \rVert_{1}
 $$
 The main benefit to introduce norm 1 is that the solution promotes **sparsity**.
