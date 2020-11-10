@@ -74,10 +74,10 @@ Besides, we have $a \approx 0$ because if $a=0$, the matrix $(X^TX + \Gamma^T\Ga
 doesn't hold any more. Thus, we should penalize $a$, and as for $\Gamma$, the fourth element should be large enough so that $a \approx 0$.
 We can imagine that the $\Gamma$ has the format,
 $$
-    \begin{matrix}
+    \begin{bmatrix}
     0 & 0 \newline
     0 & K \newline
-    \end{matrix}
+    \end{bmatrix}
 $$
 where, $K$ is extremely large.
 
@@ -86,8 +86,8 @@ we can imagine this classifier is overfitting because it focuses more on the 2 g
 is unbiased**. Hence, we shouldn't penalize anything, because unbaised classifier means minimizing the loss and ignore others.
 In this case, we can imagine that the $\Gamma$ has the format,
 $$
-    \begin{matrix}
+    \begin{bmatrix}
     0 & 0 \newline
     0 & 0 \newline
-    \end{matrix}
+    \end{bmatrix}
 $$
