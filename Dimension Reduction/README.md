@@ -2,14 +2,14 @@
 ## PCA
 ### Idea is to find approximation of data as
 $$
-x_{i} \ approx \mu + \mathbf{A}\theta_{i}
+x_{i} \approx \mu + \mathbf{A}\theta_{i}
 $$
 where, $k<<d$ and $A$ has orthonormal columns ($A^TA = I$)
 
 ### Definition of PCA
 Principal COmponent Analysis consists in solving the problem,
 $$
-\mathcal{argmin}_{\mu, \mathbf{A}, \theta_{i}} \sum\limits_{i=1}^{N} \lVert x_{i}-\mu-\mathbf{A}\theta_{i} \rVert_{2}^{2}
+\mathcal{arg}min_{\mu, \mathbf{A}, \theta_{i}} \sum\limits_{i=1}^{N} \lVert x_{i}-\mu-\mathbf{A}\theta_{i} \rVert_{2}^{2}
 $$
 
 ### Lemma
