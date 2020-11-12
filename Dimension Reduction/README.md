@@ -9,7 +9,7 @@ where, $k<<d$ and $A$ has orthonormal columns ($A^TA = I$)
 ### Definition of PCA
 Principal COmponent Analysis consists in solving the problem,
 $$
-\mathcal{arg}min\limits_{\mu, \mathbf{A}, \theta_{i}} \sum\limits_{i=1}^{N} \lVert x_{i}-\mu-\mathbf{A}\theta_{i} \rVert_{2}^{2}
+\mathcal{arg} min\limits_{\mu, \mathbf{A}, \theta_{i}} \sum\limits_{i=1}^{N} \lVert x_{i}-\mu-\mathbf{A}\theta_{i} \rVert_{2}^{2}
 $$
 
 ### Lemma
