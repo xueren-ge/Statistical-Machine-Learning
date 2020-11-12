@@ -9,7 +9,7 @@ where, $k<<d$ and $A$ has orthonormal columns ($A^TA = I$)
 ### Definition of PCA
 Principal COmponent Analysis consists in solving the problem,
 $$
-\mathcal{arg}min_{\mu, \mathbf{A}, \theta_{i}} \sum\limits_{i=1}^{N} \lVert x_{i}-\mu-\mathbf{A}\theta_{i} \rVert_{2}^{2}
+\mathcal{arg}min\limits_{\mu, \mathbf{A}, \theta_{i}} \sum\limits_{i=1}^{N} \lVert x_{i}-\mu-\mathbf{A}\theta_{i} \rVert_{2}^{2}
 $$
 
 ### Lemma
@@ -29,6 +29,6 @@ One possible choice of $\mathbf{A}$ is
 $$
 \mathbf{A} = [u_{1},\ldots, u_{k}]
 $$
-where, $\u_{i}$ is the eigenvectors corresponding to the $k$ largest eigenvalues of $S = \sum\limits_{i=1}^{N} x_{i}x_{i}^{T}$.
+where, $u_{i}$ is the eigenvectors corresponding to the $k$ largest eigenvalues of $S = \sum\limits_{i=1}^{N} x_{i}x_{i}^{T}$.
 
 For specfic proof of three Lemma, please see notes.
