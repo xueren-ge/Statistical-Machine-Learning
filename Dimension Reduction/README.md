@@ -13,7 +13,7 @@ $$
 $$
 
 ### Lemma
-Assume \mu and \mathbf{A} are fixed, then, we can have,
+Assume $\mu$ and $\mathbf{A}$ are fixed, then, we can have,
 $$
 \theta_{i} = \mathbf{A}^T (x_{i} - \mu)
 $$
