@@ -79,11 +79,14 @@ d_{\mu} = \frac{1}{N}D^{2}\mathbb{1}
 $$
 $$
 d_{x} = \begin{bmatrix}
-\lVert x-x_1 \rVert_{2}^{2} \\
-\vdots  \\
+\lVert x-x_1 \rVert_{2}^{2} \newline
+\vdots  \newline
 \lVert x-x_N \rVert_{2}^{2} 
 \end{bmatrix}
 $$
+
+Then, $A^{T} (x-\mu) = \Theta^{T}(\frac{1}{2}(d_{x}-d_{\mu}))$ where $\Theta$ consists of first $k$ columns of $V\sum^{-1}$ from the SVD $XH = U\sum V^{T}$
+
 ### Visualization of MDS
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Dimension%20Reduction/mds.jpg /></div>
 
