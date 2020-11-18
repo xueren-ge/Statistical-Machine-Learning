@@ -26,6 +26,9 @@ The mainly contains some **realization of mathmatical theories** about machine l
 * Filter Methods
 * Fisher LDA
 * Principal Component Analysis (PCA)
+* Multidimensional Scaling (MDS)
+* Isomap Feature Mapping
+* Locally Linear Embedding (LLE)
 
 ## Unsupervised Learning
 
