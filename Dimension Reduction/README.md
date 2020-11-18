@@ -55,9 +55,9 @@ the 2 dimension consists of most infomation.
 
 ## MDS
 ### Dissimilarity Matrix
-A dissimilarity matrix $\mathcal{D}=[d_ij] \in \mathbb{R}^{NxN}$ satisfies,
+A dissimilarity matrix $\mathcal{D}=[d_{ij}] \in \mathbb{R}^{NxN}$ satisfies,
 $$
-\forall i,j, \quad d_ij \geq 0, \quad d_ij = d_ji, \quad d_{ii} = 0
+\forall i,j, \quad d_{ij} \geq 0, \quad d_{ij} = d_{ji}, \quad d_{ii} = 0
 $$
 In MDS, the goal is to find dimension $k << d$ and $\left\lbrace x_{i} \right\rbrace_{i=1}^{N} \in \mathbb{R}^{k}$ s.t. $\rho(x_i, x_j) \approx d_ij$
 
