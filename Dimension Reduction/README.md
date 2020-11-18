@@ -17,7 +17,7 @@ Here, I used handwritten images to do some visualization about different dimensi
 $$
 x_{i} \approx \mu + \mathbf{A}\theta_{i}
 $$
-where, $k<<d$ and $A$ has orthonormal columns ($A^TA = I$)
+where, $k<<d$ and $A$ has orthonormal columns ($A^TA = I$). PCA mainly looks for the maximum variance.
 
 ### Definition of PCA
 Principal COmponent Analysis consists in solving the problem,
@@ -54,6 +54,19 @@ the 2 dimension consists of most infomation.
 
 
 ## MDS
+### Dissimilarity Matrix
+A dissimilarity matrix $\mathcal{D}=[d_ij] \in \mathbb{R}^{NxN}$ satisfies,
+$$
+\forall i,j, d_ij \geq 0, d_ij = d_ji, d_ii
+$$
+In MDS, the goal is to find dimension $k << d$ and $\left\lbrace x_{i} \right\rbrace_{i=1}^{N} \in \mathbb{R}^{k}$ s.t. $\rho(x_i, x_j) \approx d_ij$
+
+### Algorithm
+Assume $D$ is completely known and  $\rho(x_i, x_j) = \lVert x-y \rVert_{2}$. The algorithm is to create embedding $X \in \mathbb{R}^{KxN}$
+* Form $B=-\frac{1}{2}HD^{2}H$ where $H=\Iota-\frac{1}{N}\mathbb{1}\mathbb{1}^T$
+* Compute eigen decomposition $B=V \Lambda V^T$
+* Return $X = (V_k \Lambda_{k}^{\frac{1}{2}})^T$
+
 ### Visualization of MDS
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Dimension%20Reduction/mds.jpg /></div>
 
