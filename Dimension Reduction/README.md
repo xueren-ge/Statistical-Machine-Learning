@@ -5,6 +5,13 @@ In this module, it introduces serveral common methods about dimension reduction.
 * Isomap
 * LLE
 
+What people usually do to test your method is to use Swiss Roll.
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Dimension%20Reduction/Swiss_Roll.jpg /></div>
+
+Here, I used handwritten images to do some visualization about different dimension reduction methods. I generated more than 1000 samples which are 64 dimensional. Note that there are 5 classes.
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Dimension%20Reduction/digits.jpg /></div>
+
+
 ## PCA
 ### Idea is to find approximation of data as
 $$
@@ -40,9 +47,7 @@ where, $u_{i}$ is the eigenvectors corresponding to the $k$ largest eigenvalues 
 For specfic proof of three Lemma, please see notes.
 
 ## Visualization of PCA
-Here, I generated more than 1000 samples which are 64 dimensional. Note that there are 5 classes.
-<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Dimension%20Reduction/digits.jpg /></div>
 
-And then I use PCA to reduce the dimension to 2, you can clearly see in each class, even with 2 dimension, it's clearly separated because
+I use PCA to reduce the dimension to 2, you can clearly see in each class, even with 2 dimension, it's clearly separated because
 the 2 dimension consists of most infomation.
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Dimension%20Reduction/projection.jpg /></div>
