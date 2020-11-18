@@ -59,7 +59,7 @@ A dissimilarity matrix $\mathcal{D}=[d_{ij}] \in \mathbb{R}^{NxN}$ satisfies,
 $$
 \forall i,j, \quad d_{ij} \geq 0, \quad d_{ij} = d_{ji}, \quad d_{ii} = 0
 $$
-In MDS, the goal is to find dimension $k << d$ and $\left\lbrace x_{i} \right\rbrace_{i=1}^{N} \in \mathbb{R}^{k}$ s.t. $\rho(x_i, x_j) \approx d_ij$
+In MDS, the goal is to find dimension $k << d$ and $\left\lbrace x_{i} \right\rbrace_{i=1}^{N} \in \mathbb{R}^{k}$ s.t. $\rho(x_i, x_j) \approx d_{ij}$
 
 ### Algorithm
 Assume $D$ is completely known and  $\rho(x_i, x_j) = \lVert x-y \rVert_{2}$. The algorithm is to create embedding $X \in \mathbb{R}^{KXN}$
@@ -67,6 +67,23 @@ Assume $D$ is completely known and  $\rho(x_i, x_j) = \lVert x-y \rVert_{2}$. Th
 * Compute eigen decomposition $B=V \Lambda V^T$
 * Return $X = (V_k \Lambda_{k}^{\frac{1}{2}})^T$
 
+### Eckart-Young Theorem
+The above algorithm returns the best rank $k$ approximation in the sense that it minimize \lVert X^T X -B \rVert_{2}.
+
+### How to add new points in MDS?
+In PCA, all we have to do is to plugin new points $x$ to $A^T(x-\mu)$. However, in MDS, things get more complicated.
+
+Assume we have access to $D$ and want to add a new point $x$ to out embedding. Define,
+$$
+d_{\mu} = \frac{1}{N}D^{2}\mathbb{1}
+$$
+$$
+d_{x} = \begin{bmatrix}
+\lVert x-x_1 \rVert_{2}^{2} \\
+\vdots  \\
+\lVert x-x_N \rVert_{2}^{2} 
+\end{bmatrix}
+$$
 ### Visualization of MDS
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Dimension%20Reduction/mds.jpg /></div>
 
