@@ -1,4 +1,10 @@
-# Dimensio Reduction
+# Dimension Reduction
+In this module, it introduces serveral common methods about dimension reduction.
+* PCA
+* MDS
+* Isomap
+* LLE
+
 ## PCA
 ### Idea is to find approximation of data as
 $$
