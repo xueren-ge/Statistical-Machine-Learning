@@ -3,7 +3,7 @@ In this module, it introduces serveral common methods about dimension reduction.
 * PCA
 * MDS
 * Isomap
-* LLE
+* Locally Linear Embedding(LLE)
 
 What people usually do to test your method is to use Swiss Roll.
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Dimension%20Reduction/Swiss_Roll.jpg /></div>
@@ -46,8 +46,21 @@ where, $u_{i}$ is the eigenvectors corresponding to the $k$ largest eigenvalues 
 
 For specfic proof of three Lemma, please see notes.
 
-## Visualization of PCA
+### Visualization of PCA
 
 I use PCA to reduce the dimension to 2, you can clearly see in each class, even with 2 dimension, it's clearly separated because
 the 2 dimension consists of most infomation.
-<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Dimension%20Reduction/projection.jpg /></div>
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Dimension%20Reduction/PCA.jpg /></div>
+
+
+## MDS
+### Visualization of MDS
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Dimension%20Reduction/mds.jpg /></div>
+
+## Isomap
+### Visualization of Isomap
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Dimension%20Reduction/Isomap.jpg /></div>
+
+## LLE
+### Visualization of LLE
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Dimension%20Reduction/lle.jpg /></div>
