@@ -31,7 +31,8 @@ The mainly contains some **realization of mathmatical theories** about machine l
 * Locally Linear Embedding (LLE)
 
 ## Unsupervised Learning
-
+* K-Means
+* GMM (EM-Algorithm)
 
 Note that in order to see README.md clearly(Generally speaking, mathmatical formula), I strongly suggest you to use **Chrome** and install the 
 Chrome extension **'MathJax'**, the link for installation is here 
