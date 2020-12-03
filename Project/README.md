@@ -1,4 +1,4 @@
-#Final Project
+# Final Project
 
 Our final project focuses on generative models, especially GAN, VAE and their derivative models, CGAN, DCGAN, IWVAE and etc.
 
