@@ -15,6 +15,24 @@ $$
 y(\mathbf{x}) = sign(\mathbf{w}^{T}\mathbf{x} + b)
 $$
 
+Use the KKT conditions, you will find that the optimization problem can also been written as,
+$$
+\begin{bmatrix}
+0, \mathbf{y}^T \newline
+\mathbf{y}, \mathbf{M}
+\end{bmatrix}
+%
+\begin{bmatrix}
+b \newline
+\mathbf{\alpha}
+\end{bmatrix}
+=
+\begin{bmatrix}
+0,
+\mathbf{1}
+\end{bmatrix}
+$$
+
 And for regression problem, the optimization problem is,
 $$
 \min\limits_{w,b,\xi} (\frac{1}{2} \mathbf{w}^{T} \mathbf{w} + \frac{C}{2} \sum\limits_{i=1}^{N} \xi_{i}^{2} ), \quad s.t. \quad \forall i \in
