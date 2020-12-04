@@ -16,6 +16,7 @@ y(\mathbf{x}) = sign(\mathbf{w}^{T}\mathbf{x} + b)
 $$
 
 Use the KKT conditions, you will find that the optimization problem can also been written as,
+
 $$
 \begin{bmatrix}
 0, \mathbf{y}^T \newline
@@ -26,7 +27,9 @@ $$
 b \newline
 \mathbf{\alpha}
 \end{bmatrix}
+
 =
+
 \begin{bmatrix}
 0,
 \mathbf{1}
