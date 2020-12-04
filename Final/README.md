@@ -27,6 +27,11 @@ $$
 b \newline
 \mathbf{\alpha}
 \end{bmatrix}
+%
+=\begin{bmatrix}
+0 \newline
+\mathbf{1}
+\end{bmatrix}
 $$
 
 
