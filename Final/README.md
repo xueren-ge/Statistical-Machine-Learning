@@ -5,6 +5,8 @@
 In this problem, we are asked to solve the quadratic optimization problems which are similar to SVM and SVR. However
 they are not the same.
 
+### Classcification
+
 For classification, we have optimization problem,
 $$
 \min\limits_{w,b,\xi} = (\frac{1}{2} \mathbf{w}^T \mathbf{w} + \frac{C}{2} \sum\limits_{i=1}^{N} \xi_{i}^{2}), \quad s.t. \quad \forall i \in
@@ -34,7 +36,9 @@ b \newline
 \end{bmatrix}
 $$
 where, $\alpha$ is the Lagrangian Mutiplier, $\mathbf{M} = \Omega + \frac{1}{C} \mathbf{I}$, $\mathbf{I}$ is an identity matrix, and the components of
-$\Omega$ are $\Omega_{ij} = y_{i}y_{j} \mathbf{x_{i}}^{T} \mathbf{x_{j}}$
+$\Omega$ are $\Omega_{ij} = y_{i}y_{j} \mathbf{x_{i}}^{T} \mathbf{x_{j}}$.
+
+### regression
 
 And for regression problem, the optimization problem is,
 $$
@@ -45,3 +49,31 @@ And the regression problem is performed as,
 $$
 y(\mathbf{x}) = \mathbf{w}^{T}\mathbf{x} + b
 $$
+
+Similarly, use the KKT conditions, you will find that the optimization problem can also been written as,
+
+$$
+\begin{bmatrix}
+0 & \mathbf{1}^T \newline
+\mathbf{1} & \mathbf{M}
+\end{bmatrix}
+%
+\begin{bmatrix}
+b \newline
+\mathbf{\alpha}
+\end{bmatrix}
+%
+=\begin{bmatrix}
+0 \newline
+\mathbf{y}
+\end{bmatrix}
+$$
+where, $\alpha$ is the Lagrangian Mutiplier, $\mathbf{M} = \Omega + \frac{1}{C} \mathbf{I}$, $\mathbf{I}$ is an identity matrix, and the components of
+$\Omega$ are $\Omega_{ij} = \mathbf{x_{i}}^{T} \mathbf{x_{j}}$.
+
+### Visualization of Regression Problem
+#### Generate dataset
+We consider a dataset consisting of 250 points $\lbrace x_{i} \rbrace}$ uniformly sampled on the interval $[−7,7]$. 
+The function to estimate is $f(x) = \frac{\sin(\pi x)}{(\pi x)}$, but we only get to observe $y_{i} = x_{i} + n_{i} $,
+where $n_{i}$ is the realization of a zero-mean Gaussian noise with standard deviation $\sigma = 0.1$.
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Final/Q1.jpg/></div>
