@@ -33,8 +33,8 @@ b \newline
 \mathbf{1}
 \end{bmatrix}
 $$
-where, $\alpha$ is the Lagrangian Mutiplier, $\mathbf{M} = \Omiga + \frac{1}{C} \mathbf{I}$, $\mathbf{I}$ is an identity matrix, and the components of
-$\Omiga$ are $\Omiga_{ij} = y_{i}y_{j} \mathbf{x_{i}}^{T} \mathbf{x_{j}}$
+where, $\alpha$ is the Lagrangian Mutiplier, $\mathbf{M} = \Omega + \frac{1}{C} \mathbf{I}$, $\mathbf{I}$ is an identity matrix, and the components of
+$\Omega$ are $\Omega_{ij} = y_{i}y_{j} \mathbf{x_{i}}^{T} \mathbf{x_{j}}$
 
 And for regression problem, the optimization problem is,
 $$
