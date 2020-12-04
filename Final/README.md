@@ -19,8 +19,8 @@ Use the KKT conditions, you will find that the optimization problem can also bee
 
 $$
 \begin{bmatrix}
-0, \mathbf{y}^T \newline
-\mathbf{y}, \mathbf{M}
+0 & \mathbf{y}^T \newline
+\mathbf{y} & \mathbf{M}
 \end{bmatrix}
 %
 \begin{bmatrix}
@@ -31,7 +31,7 @@ b \newline
 =
 
 \begin{bmatrix}
-0,
+0 \newline
 \mathbf{1}
 \end{bmatrix}
 $$
