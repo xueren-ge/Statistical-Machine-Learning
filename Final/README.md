@@ -18,23 +18,18 @@ $$
 Use the KKT conditions, you will find that the optimization problem can also been written as,
 
 $$
-\begin{bmatrix}
-0 & \mathbf{y}^T \newline
-\mathbf{y} & \mathbf{M}
-\end{bmatrix}
+\[ \left( \begin{array}{cc}
+1 & 0 \\
+0 & 1
+\end{array} \right)
 %
-\begin{bmatrix}
-b \newline
-\mathbf{\alpha}
-\end{bmatrix}
-
-=
-
-\begin{bmatrix}
-0 \newline
-\mathbf{1}
-\end{bmatrix}
+\left( \begin{array}{cc}
+1 & 0 \\
+0 & 1
+\end{array} \right)
+\]
 $$
+
 
 And for regression problem, the optimization problem is,
 $$
