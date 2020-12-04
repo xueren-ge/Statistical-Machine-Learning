@@ -77,3 +77,20 @@ We consider a dataset consisting of 250 points $\lbrace x_{i} \rbrace$ uniformly
 The function to estimate is $f(x) = \frac{\sin(\pi x)}{(\pi x)}$, but we only get to observe $y_{i} = x_{i} + n_{i} $,
 where $n_{i}$ is the realization of a zero-mean Gaussian noise with standard deviation $\sigma = 0.1$.
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Final/Q1.jpg/></div>
+
+#### Use from Sklearn.svm import SVR to solve optimization problem
+use the hyperparameters epsilon=0.1, C=1e3, kernel=’rbf’ and gamma=0.25. And green line to indicate the prediction.
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Final/Q2.jpg/></div>
+
+#### Observe the Trend of Lagrangian Multiplier
+Create a plot showing the absolute value of the 250 Lagrange multipliers in order of increasing magnitude
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Final/Q3.jpg/></div>
+
+#### Write a classifier according to the optimization function above (matrix)
+Implement a solver for the kernelized version of (7) using radial basis functions to implement (8).
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Final/Q4.jpg/></div>
+
+#### Observe the Trend of Lagrangian Multiplier
+Create a plot showing the absolute value of the 250 Lagrange multipliers in order of increasing magnitude.
+<div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Final/Q5.jpg/></div>
+
