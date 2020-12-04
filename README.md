@@ -4,7 +4,8 @@ Gerogia Institute of Technology ECE 6254 course. Refer to http://bloch.ece.gatec
 if you are interested in mathmatical theory. Note that it's my instructor(**Matthieu Bloch**)'s website. And I run it on JupyterLab on MAC OS.
 
 This file includes homework, of course includes some codes beyond the homework(Other visualization of machine learning), and I
-will keep updating it about some mathmatical theories about machine learning.
+will keep updating it about some mathmatical theories about machine learning. Note that **all the homeworks have been encrypted**, anyone wants to
+violate GT's **Academic Honor Integrity** will be punished.
 
 The mainly contains some **realization of mathmatical theories** about machine learning. The contents are as follows,
 ## Supervised Learning
