@@ -73,7 +73,7 @@ $\Omega$ are $\Omega_{ij} = \mathbf{x_{i}}^{T} \mathbf{x_{j}}$.
 
 ### Visualization of Regression Problem
 #### Generate dataset
-We consider a dataset consisting of 250 points $\left\lbrace x_{i} \rbrace\right$ uniformly sampled on the interval $[−7,7]$. 
+We consider a dataset consisting of 250 points $\lbrace x_{i} \rbrace$ uniformly sampled on the interval $[−7,7]$. 
 The function to estimate is $f(x) = \frac{\sin(\pi x)}{(\pi x)}$, but we only get to observe $y_{i} = x_{i} + n_{i} $,
 where $n_{i}$ is the realization of a zero-mean Gaussian noise with standard deviation $\sigma = 0.1$.
 <div align=center><img src =https://github.com/masqueraderx/Statistical-Machine-Learning/blob/main/Final/Q1.jpg/></div>
