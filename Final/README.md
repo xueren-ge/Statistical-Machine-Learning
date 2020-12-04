@@ -18,15 +18,15 @@ $$
 Use the KKT conditions, you will find that the optimization problem can also been written as,
 
 $$
-\[ \left( \begin{array}{cc}
-1 & 0 \\
-0 & 1
-\end{array} \right)
+\[ \begin{array}{cc}
+0 & \mathbf{y}^T \newline
+\mathbf{y} & \mathbf{M}
+\end{array}
 %
-\left( \begin{array}{cc}
-1 & 0 \\
-0 & 1
-\end{array} \right)
+\begin{array}{cc}
+b \newline
+\mathbf{\alpha}
+\end{array}
 \]
 $$
 
