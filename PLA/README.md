@@ -1,4 +1,4 @@
-# Perceptron Learnign Algorithm(PLA)
+# Perceptron Learnning Algorithm(PLA)
 
 If we have a linearly separarable dataset, we can always identify a separating hyperplane to separate them.
 The principle of this algorithm is the following.
